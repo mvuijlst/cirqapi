@@ -6,7 +6,7 @@ from .models import Visitor
 
 class CreateView(generics.ListCreateAPIView):
     """This class defines the create behavior of our rest api"""
-    queryset = Visitors.objects.all()
+    queryset = Visitor.objects.all()
     serializer_class = VisitorSerializer
 
     def perform_create(self, serializer):
